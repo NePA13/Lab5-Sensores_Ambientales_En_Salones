@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6f8; color: #1f2933; }
+
+header {
+  background: #1f2933; color: #fff; padding: 16px 24px;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+}
+header h1 { margin: 0; font-size: 1.3rem; }
+main { max-width: 1100px; margin: 0 auto; padding: 20px 16px; }
+
+.tarjetas {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px; margin-bottom: 20px;
+}
+.tarjeta {
+  background: #fff; border-radius: 10px; padding: 14px; cursor: pointer;
+  border-top: 6px solid #9aa5b1; box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+}
+.tarjeta h3 { margin: 0 0 8px; }
+.tarjeta .co2 { font-size: 1.6rem; font-weight: bold; }
+.tarjeta small { color: #616e7c; display: block; }
+.ok       { border-top-color: #2f9e44; }
+.ventilar { border-top-color: #f59f00; }
+.critico  { border-top-color: #e03131; }
+
+.panel {
+  background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1); overflow-x: auto;
+}
+.panel-header { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+h2 { font-size: 1.1rem; margin: 0 0 12px; }
+
+table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e4e7eb; vertical-align: top; }
+td code { word-break: break-all; }
+.badge { background: #e03131; color: #fff; border-radius: 999px; padding: 2px 10px; font-size: .8rem; }

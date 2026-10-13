@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoreo de Aulas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Calidad del aire en salones</h1>
+    <span id="actualizado">Cargando...</span>
+  </header>
+
+  <main>
+    <section id="tarjetas" class="tarjetas"></section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Historial (últimos 30 min)</h2>
+        <select id="selector-aula"></select>
+      </div>
+      <canvas id="grafica"></canvas>
+    </section>
+
+    <section class="panel">
+      <h2>Lecturas rechazadas por la Lambda <span id="total-rechazados" class="badge">0</span></h2>
+      <table>
+        <thead><tr><th>Recibido</th><th>Errores</th><th>Dato original</th></tr></thead>
+        <tbody id="tabla-rechazados"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
